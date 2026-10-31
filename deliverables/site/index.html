@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check and retry: an answer to AtelierBench's open question</title>
+  <meta name="description" content="What happens when models check their own output and retry? An independent experiment on DeepSeek V4.1 Flash and real ComfyUI, prompted by Hyde's AtelierBench.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', saved || sys);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+  <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top" aria-label="Page">
+  <a class="name" href="#top">Check and retry</a>
+  <div class="links">
+    <a href="#replay">Replay</a>
+    <a href="#results">Results</a>
+    <a class="optional" href="#numbers">Numbers</a>
+    <a class="optional" href="#limits">Limits</a>
+    <a class="optional" href="https://github.com/ayeangad/check-and-retry">Code</a>
+    <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero wrap grid">
+    <h1 class="display">What happens when models check their own output and retry?</h1>
+    <p class="attrib">Hyde left this open at the end of AtelierBench. I ran it.</p>
+    <p class="lede">They fix the brief violations that validation waves through, <strong>but only when the check says how to fix them.</strong> And the check doesn't need the image: checking the workflow before it runs gets the same result as checking the render, for half the image generations.</p>
+    <dl class="facts" aria-label="Setup">
+      <div><dt>Model</dt><dd>DeepSeek V4.1 Flash</dd><dd class="sub">The open-weights contestant in AtelierBench</dd></div>
+      <div><dt>Runs</dt><dd>444 agent runs</dd><dd class="sub">37 logo briefs × 3 runs × 4 ways of checking</dd></div>
+      <div><dt>Ground truth</dt><dd>Real ComfyUI output</dd><dd class="sub">The delivered PNG, measured pixel by pixel</dd></div>
+      <div><dt>Scope</dt><dd>Objective claims</dd><dd class="sub">Size, count, logo, position, composition</dd></div>
+    </dl>
+  </header>
+
+  <section class="block wrap" id="replay" aria-labelledby="replay-h">
+    <div class="grid">
+      <div class="section-head">
+        <h2 class="h2" id="replay-h">Your Exhibit 1, replayed four ways</h2>
+        <p class="body">Same brief, same model, same first workflow. DeepSeek's first submission scales the SILVERSIDE logo from 300×70 to 420×168 before pasting it. ComfyUI's validator accepts that. The brief says the logo must be reproduced <strong>exactly as supplied</strong>. Pick how the agent checks its work, then step through what happened.</p>
+      </div>
+    </div>
+
+    <div class="replay grid">
+      <fieldset class="arms" role="radiogroup" aria-label="How the agent checks its work" id="arms">
+        <legend class="tag">How the agent checks its work</legend>
+      </fieldset>
+
+      <div class="stage">
+        <figure class="canvas-wrap">
+          <svg class="canvas" id="canvas" viewBox="-10 -60 1940 1200" role="img" aria-labelledby="canvas-desc">
+            <desc id="canvas-desc">The 1920 by 1080 delivery canvas, with the logo drawn at the size and position of the current workflow.</desc>
+            <rect class="frame" x="0" y="0" width="1920" height="1080"/>
+            <g id="refs"></g>
+            <rect class="zone" x="0" y="0" width="480" height="270"/>
+            <text class="dim" x="492" y="262">brief: upper-left</text>
+            <text class="dim" x="0" y="-22">1920 × 1080</text>
+            <text class="dim" x="1920" y="-22" text-anchor="end">16:9</text>
+            <g id="logo">
+              <image id="logo-img" href="assets/silverside-logo.png" x="80" y="70" width="420" height="168" preserveAspectRatio="none"/>
+              <rect class="logo-box" id="logo-box" x="80" y="70" width="420" height="168"/>
+              <text class="logo-label" id="logo-label" x="80" y="275">420×168 at (80, 70)</text>
+            </g>
+            <text class="stamp" id="stamp" x="1920" y="1125" text-anchor="end"></text>
+          </svg>
+          <figcaption class="canvas-caption">
+            <span class="note">Outlines show the layout of the synthetic stand-in photo. Image content is stubbed; size and logo pixels come from real ComfyUI nodes.</span>
+            <span class="note mono" id="canvas-state">workflow v1</span>
+          </figcaption>
+        </figure>
+
+        <div class="side">
+          <ol class="steps" id="steps" aria-label="Steps"></ol>
+          <div class="panel" aria-live="polite">
+            <h3 id="p-title"></h3>
+            <p class="what" id="p-what"></p>
+            <ul class="nodes" id="p-nodes" aria-label="Workflow nodes"></ul>
+            <div class="feedback" id="p-feedback" hidden></div>
+          </div>
+          <div class="controls">
+            <button class="btn" id="next" type="button">Next step</button>
+            <button class="btn quiet" id="restart" type="button">Start over</button>
+          </div>
+          <div class="ledger">
+            <div><span class="tag">Image generations</span><span class="v" id="l-gen">0</span></div>
+            <div><span class="tag">Check time</span><span class="v" id="l-time">0</span></div>
+            <div><span class="tag">Brief met</span><span class="v" id="l-result"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="results" aria-labelledby="results-h">
+    <div class="grid">
+      <div class="section-head">
+        <h2 class="h2" id="results-h">Across 111 runs</h2>
+        <p class="body">37 logo briefs modelled on Exhibit 1, three runs each. Within a run, all four ways of checking start from the same conversation and split at the first workflow ComfyUI accepts, so the only difference between them is the check.</p>
+      </div>
+    </div>
+
+    <div class="results grid">
+      <div class="chart-row">
+        <div class="chart" id="chart-pass">
+          <h3>Deliverables that meet every objective claim</h3>
+          <p class="sub">Share of runs, with 95% confidence interval</p>
+        </div>
+        <div class="chart" id="chart-gen">
+          <h3>Image generations per run</h3>
+          <p class="sub">Each one is a paid render in production</p>
+        </div>
+      </div>
+      <details class="table" style="grid-column: 1 / -1">
+        <summary>Show the numbers as a table</summary>
+        <table>
+          <thead><tr><th>Check</th><th>Brief met</th><th>95% CI</th><th>Generations per run</th><th>Tokens per run</th><th>Check time</th></tr></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </details>
+
+      <div class="pull">
+        <p><strong>98 and 98 of 111</strong>Checking the plan and checking the output, when both say how to fix it. Difference 0.0 points, 95% CI −5.4 to +5.4.</p>
+        <p><strong>104 vs 216 renders</strong>For the same 98 deliverables. The plan check runs in under a millisecond on a CPU and never renders.</p>
+        <p><strong>142 of 142</strong>Workflows that broke a brief requirement and still passed ComfyUI's validator, in a separate test of 214 workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" aria-labelledby="info-h">
+    <div class="grid">
+      <div class="two">
+        <div>
+          <h2 class="h2" id="info-h">Most of the gap was missing information</h2>
+          <p class="body" style="margin-top:1.25rem">The agent was never told the logo's pixel size, and none of its tools reports it, so it couldn't work out where a corner placement starts. The workflow check reads the file and says it outright: <span class="mono">x=1348, y=32</span>.</p>
+          <p class="body">When I wrote the logo's size into the brief instead, validation alone met the brief in 89% of runs on the same briefs. So the order of fixes matters: give the model the facts first, then let the check catch what's left. It costs nothing to run.</p>
+        </div>
+        <dl class="compare" aria-label="Validation only, by what the agent knew">
+          <div><dt>Validation only, logo size unknown</dt><dd>9%<span class="n">n = 111</span></dd></div>
+          <div><dt>Validation only, logo size in the brief</dt><dd>89%<span class="n">n = 37</span></dd></div>
+          <div><dt>Plan check, logo size unknown</dt><dd>88%<span class="n">n = 111</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" aria-labelledby="scorer-h">
+    <div class="grid">
+      <div class="two">
+        <div>
+          <h2 class="h2" id="scorer-h">A scorer, not a judge</h2>
+          <p class="body" style="margin-top:1.25rem">Your Catan post made the case for a cheap scorer plus search. A brief contract is that scorer for design workflows: deterministic, under a millisecond, no model call.</p>
+          <p class="body">Asked to pick one of four sampled workflows, it chose as well as an oracle on all 73 briefs, and never rejected a workflow that actually met the brief. That makes it usable as a filter, or as a reward for training small workflow models.</p>
+          <p class="body">It also holds on a 4B model on a 4 GB laptop GPU: the plan check lifted qwen3.5:4b from 12% to 42% of briefs met (48 runs). Half of that model's runs never produced a workflow that executes at all, so for small models, building the graph is the first problem.</p>
+        </div>
+        <dl class="compare" aria-label="The contract as a selector">
+          <div><dt>Best of 4, picked at random</dt><dd>51%<span class="n">73 briefs</span></dd></div>
+          <div><dt>Best of 4, picked by the contract</dt><dd>67%<span class="n">73 briefs</span></dd></div>
+          <div><dt>Best of 4, perfect picker</dt><dd>67%<span class="n">73 briefs</span></dd></div>
+          <div><dt>Good workflows wrongly rejected</dt><dd>0<span class="n">of 149</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="numbers" aria-labelledby="numbers-h">
+    <div class="grid">
+      <div class="section-head"><h2 class="h2" id="numbers-h">All the numbers</h2>
+        <p class="body">Every result on this page, with the model it came from and how many runs it rests on. Ranges are 95% confidence intervals.</p></div>
+      <div class="key-table" role="region" aria-label="All results" tabindex="0">
+        <table>
+          <thead><tr><th>What was measured</th><th>Model</th><th>Sample</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr class="group"><th colspan="4">Does checking help? Logo briefs, logo size not given to the agent</th></tr>
+            <tr><td>Brief met, validation only</td><td>DeepSeek V4.1 Flash</td><td>111 runs</td><td>9% <span>(5–16)</span></td></tr>
+            <tr><td>Brief met, check the output</td><td>DeepSeek V4.1 Flash</td><td>111 runs</td><td>27% <span>(20–36)</span></td></tr>
+            <tr><td>Brief met, check the output with the fix</td><td>DeepSeek V4.1 Flash</td><td>111 runs</td><td>88% <span>(81–93)</span></td></tr>
+            <tr><td>Brief met, check the plan</td><td>DeepSeek V4.1 Flash</td><td>111 runs</td><td>88% <span>(81–93)</span></td></tr>
+            <tr><td>Plan check minus output check with the fix</td><td>DeepSeek V4.1 Flash</td><td>111 paired runs</td><td>0.0 points <span>(−5.4 to +5.4)</span></td></tr>
+            <tr><td>Image renders per run, plan check vs output check</td><td>DeepSeek V4.1 Flash</td><td>111 runs each</td><td>0.94 vs 1.95</td></tr>
+            <tr class="group"><th colspan="4">Was it the checking or the information?</th></tr>
+            <tr><td>Brief met, validation only, logo size written into the brief</td><td>DeepSeek V4.1 Flash</td><td>37 runs</td><td>89% <span>(75–96)</span></td></tr>
+            <tr class="group"><th colspan="4">How accurate is the check?</th></tr>
+            <tr><td>Brief-violating workflows that pass ComfyUI's validator</td><td>Hand-built test set</td><td>214 workflows</td><td>142 of 142</td></tr>
+            <tr><td>Plan check on model-written workflows: false alarms</td><td>DeepSeek V4.1 Flash</td><td>3,011 claim checks</td><td>0</td></tr>
+            <tr><td>Plan check on model-written workflows: violations caught</td><td>DeepSeek V4.1 Flash</td><td>501 violations</td><td>469 <span>(94%)</span></td></tr>
+            <tr><td>Plan check abstained (could not verify)</td><td>DeepSeek V4.1 Flash</td><td>3,011 claim checks</td><td>79 <span>(2.6%)</span></td></tr>
+            <tr><td>Time per check</td><td>CPU, no model call</td><td>—</td><td>under 1 ms</td></tr>
+            <tr class="group"><th colspan="4">The check as a scorer: pick one of four sampled workflows</th></tr>
+            <tr><td>Brief met, picked at random</td><td>DeepSeek V4.1 Flash</td><td>73 briefs</td><td>51%</td></tr>
+            <tr><td>Brief met, picked by the plan check</td><td>DeepSeek V4.1 Flash</td><td>73 briefs</td><td>67% <span>(56–77)</span></td></tr>
+            <tr><td>Brief met, perfect picker</td><td>DeepSeek V4.1 Flash</td><td>73 briefs</td><td>67%</td></tr>
+            <tr class="group"><th colspan="4">Replication on a small local model</th></tr>
+            <tr><td>Brief met, validation only</td><td>qwen3.5:4b</td><td>48 runs</td><td>12% <span>(6–25)</span></td></tr>
+            <tr><td>Brief met, check the plan</td><td>qwen3.5:4b</td><td>48 runs</td><td>42% <span>(29–56)</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="limits" aria-labelledby="limits-h">
+    <div class="grid">
+      <div class="section-head"><h2 class="h2" id="limits-h">What this doesn't show</h2></div>
+      <ul class="limits">
+        <li><strong>Objective claims only.</strong> Size, deliverable count, logo pixels and position, reference composition. Not style, rendered text or taste: those still need judges and designers.</li>
+        <li><strong>Image content is stubbed.</strong> Geometry comes from real ComfyUI nodes; what the diffusion model would have painted is not real.</li>
+        <li><strong>Synthetic briefs, one model.</strong> Briefs are modelled on Exhibit 1, not your 156 tasks. DeepSeek V4.1 Flash only; no frontier model was tested.</li>
+        <li><strong>A friendlier baseline than yours.</strong> My validation-only harness puts a node reference in the prompt and validates at every submit. Compare the checks with each other, not with your numbers.</li>
+        <li><strong>Information versus checking.</strong> Most of the logo gain came from facts the check supplied. The follow-up that showed this was designed after seeing the first results.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="grid">
+    <div class="meta">
+      <p class="contact"><a href="https://ayeangad.xyz">Angad</a><a href="mailto:contact.angadsankhla@gmail.com">contact.angadsankhla@gmail.com</a><a href="https://github.com/ayeangad/check-and-retry">Code, data and transcripts on GitHub</a></p>
+      <p>Independent work. Not affiliated with Hyde or SILVERSIDE; none of Hyde's tasks, harness or data were used beyond the public article.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<script src="app.js"></script>
+</body>
+</html>
