@@ -1,0 +1,324 @@
+2026-10-30 16:29:42,656 INFO T00_t2i_size base         seed=0 exec=True score=1.00 all=True tools=0 brej=0 runs=0 tok=944/410 79s 
+2026-10-30 16:29:43,119 INFO T00_t2i_size extended     seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=0 tok=3834/720 163s 
+2026-10-30 16:29:43,566 INFO T00_t2i_size output_retry seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=1 tok=3834/720 164s 
+2026-10-30 16:29:44,032 INFO T00_t2i_size contract     seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=0 tok=3834/720 163s 
+2026-10-30 16:47:23,126 INFO T01_t2i_logo base         seed=0 exec=True score=0.25 all=False tools=0 brej=0 runs=0 tok=994/438 80s 
+2026-10-30 16:47:26,318 INFO T01_t2i_logo extended     seed=0 exec=True score=0.75 all=False tools=15 brej=0 runs=0 tok=38754/2207 504s 
+2026-10-30 16:47:28,627 INFO T01_t2i_logo output_retry seed=0 exec=True score=0.75 all=False tools=15 brej=1 runs=1 tok=38754/2207 507s 
+2026-10-30 16:47:31,906 INFO T01_t2i_logo contract     seed=0 exec=True score=0.75 all=False tools=15 brej=1 runs=0 tok=38754/2207 504s 
+2026-10-30 16:54:19,512 INFO T02_edit_ref base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=972/367 71s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:54:19,518 INFO T02_edit_ref extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32588/1509 337s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:54:19,524 INFO T02_edit_ref output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32588/1509 337s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:54:19,530 INFO T02_edit_ref contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32588/1509 337s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:58:12,488 INFO T03_edit_ref_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1017/570 109s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:58:12,490 INFO T03_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=4285/544 124s 
+2026-10-30 16:58:12,491 INFO T03_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=4285/544 124s 
+2026-10-30 16:58:12,492 INFO T03_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=4285/544 124s 
+2026-10-30 17:15:04,059 INFO T04_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=942/286 57s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:15:04,066 INFO T04_t2i_size extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53670/4027 955s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:15:04,072 INFO T04_t2i_size output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53670/4027 955s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:15:04,078 INFO T04_t2i_size contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53670/4027 955s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:37:29,393 INFO T05_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=991/673 125s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:37:31,545 INFO T05_t2i_logo extended     seed=0 exec=True score=0.25 all=False tools=10 brej=0 runs=0 tok=11082/1235 282s 
+2026-10-30 17:37:32,848 INFO T05_t2i_logo output_retry seed=0 exec=True score=0.25 all=False tools=15 brej=3 runs=3 tok=35873/3576 802s 
+2026-10-30 17:37:35,875 INFO T05_t2i_logo contract     seed=0 exec=True score=1.00 all=True tools=14 brej=2 runs=0 tok=30631/3215 701s 
+2026-10-30 17:50:07,726 INFO T06_edit_ref base         seed=0 exec=True score=0.67 all=False tools=0 brej=0 runs=0 tok=965/692 121s 
+2026-10-30 17:50:08,747 INFO T06_edit_ref extended     seed=0 exec=True score=0.67 all=False tools=10 brej=0 runs=0 tok=22471/583 153s 
+2026-10-30 17:50:09,038 INFO T06_edit_ref output_retry seed=0 exec=True score=0.67 all=False tools=13 brej=3 runs=3 tok=33869/1878 445s 
+2026-10-30 17:50:10,919 INFO T06_edit_ref contract     seed=0 exec=True score=1.00 all=True tools=12 brej=2 runs=0 tok=29706/1262 328s 
+2026-10-30 17:57:20,481 INFO T07_edit_ref_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1018/446 85s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 17:57:20,482 INFO T07_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43122/1542 344s 
+2026-10-30 17:57:20,483 INFO T07_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43122/1542 344s 
+2026-10-30 17:57:20,484 INFO T07_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43122/1542 344s 
+2026-10-30 18:08:27,849 INFO T08_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=948/306 56s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:08:28,304 INFO T08_t2i_size extended     seed=0 exec=True score=0.50 all=False tools=8 brej=0 runs=0 tok=18090/1261 248s 
+2026-10-30 18:08:28,788 INFO T08_t2i_size output_retry seed=0 exec=True score=1.00 all=True tools=11 brej=3 runs=3 tok=29962/2263 449s 
+2026-10-30 18:08:29,498 INFO T08_t2i_size contract     seed=0 exec=True score=1.00 all=True tools=10 brej=1 runs=0 tok=25874/1969 410s 
+2026-10-30 18:11:41,653 INFO T09_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/437 76s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:11:41,654 INFO T09_t2i_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43092/426 116s 
+2026-10-30 18:11:41,655 INFO T09_t2i_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43092/426 116s 
+2026-10-30 18:11:41,657 INFO T09_t2i_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43092/426 116s 
+2026-10-30 18:18:06,023 INFO T10_edit_ref base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=963/417 76s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:18:06,028 INFO T10_edit_ref extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39268/1427 308s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:18:06,032 INFO T10_edit_ref output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39268/1427 308s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:18:06,036 INFO T10_edit_ref contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39268/1427 308s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:43:40,888 INFO T11_edit_ref_logo base         seed=0 exec=True score=0.40 all=False tools=0 brej=0 runs=0 tok=1014/545 92s 
+2026-10-30 18:43:40,912 INFO T11_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=37709/2946 1441s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:43:40,932 INFO T11_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=37709/2946 1441s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:43:40,951 INFO T11_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=37709/2946 1441s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:48:14,619 INFO T12_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=944/381 159s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:48:14,860 INFO T12_t2i_size extended     seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=0 tok=3834/720 114s 
+2026-10-30 18:48:15,095 INFO T12_t2i_size output_retry seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=1 tok=3834/720 114s 
+2026-10-30 18:48:15,342 INFO T12_t2i_size contract     seed=0 exec=True score=1.00 all=True tools=7 brej=0 runs=0 tok=3834/720 114s 
+2026-10-30 18:50:23,390 INFO T13_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/291 40s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:50:23,391 INFO T13_t2i_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44070/408 88s 
+2026-10-30 18:50:23,391 INFO T13_t2i_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44070/408 88s 
+2026-10-30 18:50:23,392 INFO T13_t2i_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44070/408 88s 
+2026-10-30 18:52:27,758 INFO T14_edit_ref base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=972/360 49s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:52:27,759 INFO T14_edit_ref extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19513/431 75s 
+2026-10-30 18:52:27,760 INFO T14_edit_ref output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19513/431 75s 
+2026-10-30 18:52:27,760 INFO T14_edit_ref contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19513/431 75s 
+2026-10-30 18:55:33,123 INFO T15_edit_ref_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1017/785 101s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 18:55:33,123 INFO T15_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=28060/433 84s 
+2026-10-30 18:55:33,124 INFO T15_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=28060/433 84s 
+2026-10-30 18:55:33,124 INFO T15_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=28060/433 84s 
+2026-10-30 19:02:25,715 INFO T16_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=942/293 39s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 19:02:25,719 WARNING T16_t2i_size extended seed=0 skipped (infrastructure error, will retry on resume): RemoteDisconnected: Remote end closed connection without response
+2026-10-30 19:02:25,720 WARNING T16_t2i_size output_retry seed=0 skipped (infrastructure error, will retry on resume): RemoteDisconnected: Remote end closed connection without response
+2026-10-30 19:02:25,721 WARNING T16_t2i_size contract seed=0 skipped (infrastructure error, will retry on resume): RemoteDisconnected: Remote end closed connection without response
+2026-10-30 19:02:25,723 WARNING T17_t2i_logo base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,723 WARNING T17_t2i_logo extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,723 WARNING T17_t2i_logo output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,723 WARNING T17_t2i_logo contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,724 WARNING T18_edit_ref base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,725 WARNING T18_edit_ref extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,725 WARNING T18_edit_ref output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,725 WARNING T18_edit_ref contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,727 WARNING T19_edit_ref_logo base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,727 WARNING T19_edit_ref_logo extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,727 WARNING T19_edit_ref_logo output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,727 WARNING T19_edit_ref_logo contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,730 WARNING T20_t2i_size base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,730 WARNING T20_t2i_size extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,730 WARNING T20_t2i_size output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,730 WARNING T20_t2i_size contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,731 WARNING T21_t2i_logo base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,732 WARNING T21_t2i_logo extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,732 WARNING T21_t2i_logo output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,732 WARNING T21_t2i_logo contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,735 WARNING T22_edit_ref base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,735 WARNING T22_edit_ref extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,735 WARNING T22_edit_ref output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,735 WARNING T22_edit_ref contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,738 WARNING T23_edit_ref_logo base seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,738 WARNING T23_edit_ref_logo extended seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,738 WARNING T23_edit_ref_logo output_retry seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,739 WARNING T23_edit_ref_logo contract seed=0 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,742 WARNING T00_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,742 WARNING T00_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,742 WARNING T00_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,742 WARNING T00_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,744 WARNING T01_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,744 WARNING T01_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,744 WARNING T01_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,744 WARNING T01_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,745 WARNING T02_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,745 WARNING T02_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,746 WARNING T02_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,746 WARNING T02_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,747 WARNING T03_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,747 WARNING T03_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,747 WARNING T03_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,747 WARNING T03_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,749 WARNING T04_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,749 WARNING T04_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,749 WARNING T04_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,749 WARNING T04_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,751 WARNING T05_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,751 WARNING T05_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,751 WARNING T05_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,751 WARNING T05_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,753 WARNING T06_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,753 WARNING T06_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,753 WARNING T06_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,753 WARNING T06_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,755 WARNING T07_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,755 WARNING T07_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,755 WARNING T07_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,755 WARNING T07_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,758 WARNING T08_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,758 WARNING T08_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,758 WARNING T08_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,758 WARNING T08_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,761 WARNING T09_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,761 WARNING T09_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,761 WARNING T09_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,761 WARNING T09_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,763 WARNING T10_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,763 WARNING T10_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,763 WARNING T10_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,763 WARNING T10_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,765 WARNING T11_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,765 WARNING T11_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,765 WARNING T11_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,765 WARNING T11_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,766 WARNING T12_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,766 WARNING T12_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,767 WARNING T12_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,767 WARNING T12_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,768 WARNING T13_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,768 WARNING T13_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,768 WARNING T13_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,768 WARNING T13_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,770 WARNING T14_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,770 WARNING T14_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,770 WARNING T14_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,770 WARNING T14_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,772 WARNING T15_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,772 WARNING T15_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,772 WARNING T15_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,772 WARNING T15_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,774 WARNING T16_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,774 WARNING T16_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,774 WARNING T16_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,774 WARNING T16_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,776 WARNING T17_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,776 WARNING T17_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,776 WARNING T17_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,776 WARNING T17_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,778 WARNING T18_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,778 WARNING T18_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,778 WARNING T18_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,778 WARNING T18_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,780 WARNING T19_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,780 WARNING T19_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,780 WARNING T19_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,780 WARNING T19_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,781 WARNING T20_t2i_size base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,781 WARNING T20_t2i_size extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,782 WARNING T20_t2i_size output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,782 WARNING T20_t2i_size contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,783 WARNING T21_t2i_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,783 WARNING T21_t2i_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,783 WARNING T21_t2i_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,783 WARNING T21_t2i_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,785 WARNING T22_edit_ref base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,785 WARNING T22_edit_ref extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,785 WARNING T22_edit_ref output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,785 WARNING T22_edit_ref contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,786 WARNING T23_edit_ref_logo base seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,786 WARNING T23_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,786 WARNING T23_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+2026-10-30 19:02:25,786 WARNING T23_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry on resume): URLError: <urlopen error [Errno 111] Connection refused>
+--- resume Fri Oct 30 08:05:15 PM IST 2026 ---
+2026-10-30 20:14:26,504 INFO T16_t2i_size extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=52762/3739 542s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:14:26,508 INFO T16_t2i_size output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=52762/3739 542s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:14:26,512 INFO T16_t2i_size contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=52762/3739 542s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:20:48,758 INFO T17_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=991/751 95s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:20:49,523 INFO T17_t2i_logo extended     seed=0 exec=True score=0.25 all=False tools=14 brej=0 runs=0 tok=14862/965 147s 
+2026-10-30 20:20:50,259 INFO T17_t2i_logo output_retry seed=0 exec=True score=0.25 all=False tools=15 brej=1 runs=1 tok=18628/1445 218s 
+2026-10-30 20:20:50,262 INFO T17_t2i_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=1 runs=0 tok=18838/1422 216s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:28:22,868 INFO T18_edit_ref base         seed=0 exec=True score=0.33 all=False tools=0 brej=0 runs=0 tok=965/369 46s 
+2026-10-30 20:28:22,869 INFO T18_edit_ref extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32621/2989 407s 
+2026-10-30 20:28:22,869 INFO T18_edit_ref output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32621/2989 407s 
+2026-10-30 20:28:22,870 INFO T18_edit_ref contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32621/2989 407s 
+2026-10-30 20:30:51,549 INFO T19_edit_ref_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1018/452 49s 
+2026-10-30 20:30:51,550 INFO T19_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46645/598 99s 
+2026-10-30 20:30:51,550 INFO T19_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46645/598 99s 
+2026-10-30 20:30:51,551 INFO T19_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46645/598 99s 
+2026-10-30 20:35:07,896 INFO T20_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=948/305 34s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:35:08,166 INFO T20_t2i_size extended     seed=0 exec=True score=0.50 all=False tools=3 brej=0 runs=0 tok=5107/614 71s 
+2026-10-30 20:35:08,396 INFO T20_t2i_size output_retry seed=0 exec=True score=1.00 all=True tools=5 brej=1 runs=2 tok=10336/1444 170s 
+2026-10-30 20:35:08,867 INFO T20_t2i_size contract     seed=0 exec=True score=1.00 all=True tools=4 brej=1 runs=0 tok=7625/1000 123s 
+2026-10-30 20:37:30,192 INFO T21_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/666 70s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:37:30,193 INFO T21_t2i_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44879/391 71s 
+2026-10-30 20:37:30,193 INFO T21_t2i_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44879/391 71s 
+2026-10-30 20:37:30,194 INFO T21_t2i_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=44879/391 71s 
+2026-10-30 20:44:41,557 INFO T22_edit_ref base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=963/666 71s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 20:44:41,805 INFO T22_edit_ref extended     seed=0 exec=True score=0.67 all=False tools=11 brej=0 runs=0 tok=11859/963 122s 
+2026-10-30 20:44:42,063 INFO T22_edit_ref output_retry seed=0 exec=True score=0.67 all=False tools=15 brej=3 runs=3 tok=28805/2602 360s 
+2026-10-30 20:44:42,326 INFO T22_edit_ref contract     seed=0 exec=True score=0.67 all=False tools=11 brej=0 runs=0 tok=11859/963 122s 
+2026-10-30 20:47:13,462 INFO T23_edit_ref_logo base         seed=0 exec=True score=0.20 all=False tools=0 brej=0 runs=0 tok=1014/651 79s 
+2026-10-30 20:47:13,463 INFO T23_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=21403/418 72s 
+2026-10-30 20:47:13,463 INFO T23_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=21403/418 72s 
+2026-10-30 20:47:13,463 INFO T23_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=21403/418 72s 
+2026-10-30 20:49:03,854 INFO T00_t2i_size base         seed=1 exec=True score=1.00 all=True tools=0 brej=0 runs=0 tok=944/422 55s 
+2026-10-30 20:49:04,094 INFO T00_t2i_size extended     seed=1 exec=True score=1.00 all=True tools=2 brej=0 runs=0 tok=3118/397 55s 
+2026-10-30 20:49:04,320 INFO T00_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=2 brej=0 runs=1 tok=3118/397 55s 
+2026-10-30 20:49:04,538 INFO T00_t2i_size contract     seed=1 exec=True score=1.00 all=True tools=2 brej=0 runs=0 tok=3118/397 55s 
+2026-10-30 21:00:26,704 INFO T01_t2i_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/443 58s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 21:00:27,672 INFO T01_t2i_logo extended     seed=1 exec=True score=0.25 all=False tools=14 brej=0 runs=0 tok=40301/1921 301s 
+2026-10-30 21:00:28,485 INFO T01_t2i_logo output_retry seed=1 exec=True score=0.25 all=False tools=15 brej=2 runs=2 tok=45423/2634 418s 
+2026-10-30 21:00:29,296 INFO T01_t2i_logo contract     seed=1 exec=True score=0.50 all=False tools=15 brej=2 runs=0 tok=45630/3172 507s 
+2026-10-30 21:08:38,771 INFO T02_edit_ref base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=972/502 60s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 21:08:39,259 INFO T02_edit_ref extended     seed=1 exec=True score=0.67 all=False tools=9 brej=0 runs=0 tok=8305/844 127s 
+2026-10-30 21:08:39,539 INFO T02_edit_ref output_retry seed=1 exec=True score=0.67 all=False tools=15 brej=3 runs=3 tok=33534/2277 353s 
+2026-10-30 21:08:40,265 INFO T02_edit_ref contract     seed=1 exec=True score=1.00 all=True tools=10 brej=1 runs=0 tok=11669/1258 204s 
+2026-10-30 21:19:01,004 INFO T03_edit_ref_logo base         seed=1 exec=True score=0.60 all=False tools=0 brej=0 runs=0 tok=1017/560 73s 
+2026-10-30 21:19:01,014 INFO T03_edit_ref_logo extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=45792/3276 546s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 21:19:01,019 INFO T03_edit_ref_logo output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=45792/3276 546s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 21:19:01,024 INFO T03_edit_ref_logo contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=45792/3276 546s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 21:30:11,336 INFO T04_t2i_size base         seed=1 exec=True score=0.50 all=False tools=0 brej=0 runs=0 tok=942/360 50s 
+2026-10-30 21:30:11,556 INFO T04_t2i_size extended     seed=1 exec=True score=0.50 all=False tools=8 brej=0 runs=0 tok=6568/951 155s 
+2026-10-30 21:30:11,818 INFO T04_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=14 brej=2 runs=3 tok=31165/3183 547s 
+2026-10-30 21:30:12,253 INFO T04_t2i_size contract     seed=1 exec=True score=1.00 all=True tools=9 brej=1 runs=0 tok=9830/1326 229s 
+2026-10-31 00:17:09,249 INFO T05_t2i_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=991/617 94s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:17:09,252 INFO T05_t2i_logo extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=47984/3013 489s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:17:09,254 INFO T05_t2i_logo output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=47984/3013 489s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:17:09,256 INFO T05_t2i_logo contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=47984/3013 489s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:28:32,167 INFO T06_edit_ref base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=965/426 54s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:28:32,532 INFO T06_edit_ref extended     seed=1 exec=True score=0.67 all=False tools=12 brej=0 runs=0 tok=33312/1943 296s 
+2026-10-31 00:28:32,769 INFO T06_edit_ref output_retry seed=1 exec=True score=0.67 all=False tools=15 brej=2 runs=2 tok=48081/2693 420s 
+2026-10-31 00:28:33,257 INFO T06_edit_ref contract     seed=1 exec=True score=1.00 all=True tools=15 brej=2 runs=0 tok=48424/3082 504s 
+2026-10-31 00:34:41,743 INFO T07_edit_ref_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1018/599 77s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 00:34:42,317 INFO T07_edit_ref_logo extended     seed=1 exec=True score=0.60 all=False tools=13 brej=0 runs=0 tok=22073/1211 194s 
+2026-10-31 00:34:42,856 INFO T07_edit_ref_logo output_retry seed=1 exec=True score=1.00 all=True tools=14 brej=1 runs=2 tok=26129/1554 248s 
+2026-10-31 00:34:43,390 INFO T07_edit_ref_logo contract     seed=1 exec=True score=1.00 all=True tools=14 brej=1 runs=0 tok=26219/1481 236s 
+2026-10-31 00:39:29,924 INFO T08_t2i_size base         seed=1 exec=True score=0.50 all=False tools=0 brej=0 runs=0 tok=948/422 54s 
+2026-10-31 00:39:30,173 INFO T08_t2i_size extended     seed=1 exec=True score=0.50 all=False tools=2 brej=0 runs=0 tok=3126/388 52s 
+2026-10-31 00:39:30,409 INFO T08_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=5 brej=3 runs=3 tok=10263/1309 181s 
+2026-10-31 00:39:30,877 INFO T08_t2i_size contract     seed=1 exec=True score=1.00 all=True tools=3 brej=1 runs=0 tok=5262/738 104s 
+2026-10-31 01:02:25,343 INFO T09_t2i_logo base         seed=1 exec=True score=0.50 all=False tools=0 brej=0 runs=0 tok=994/602 75s 
+2026-10-31 01:02:25,839 INFO T09_t2i_logo extended     seed=1 exec=True score=0.25 all=False tools=6 brej=0 runs=0 tok=13361/1681 237s 
+2026-10-31 01:02:26,533 INFO T09_t2i_logo output_retry seed=1 exec=True score=0.50 all=False tools=10 brej=3 runs=3 tok=113966/6580 1176s 
+2026-10-31 01:02:27,006 INFO T09_t2i_logo contract     seed=1 exec=True score=1.00 all=True tools=7 brej=1 runs=0 tok=17231/2387 359s 
+2026-10-31 01:11:14,423 INFO T10_edit_ref base         seed=1 exec=True score=0.67 all=False tools=0 brej=0 runs=0 tok=963/431 55s 
+2026-10-31 01:11:14,426 INFO T10_edit_ref extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53121/3029 472s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 01:11:14,429 INFO T10_edit_ref output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53121/3029 472s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 01:11:14,431 INFO T10_edit_ref contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=53121/3029 472s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 01:27:58,231 INFO T11_edit_ref_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1014/594 74s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 01:27:58,611 INFO T11_edit_ref_logo extended     seed=1 exec=True score=0.20 all=False tools=12 brej=0 runs=0 tok=39734/3108 464s 
+2026-10-31 01:27:58,960 INFO T11_edit_ref_logo output_retry seed=1 exec=True score=0.20 all=False tools=15 brej=1 runs=1 tok=57838/4565 715s 
+2026-10-31 01:27:59,289 INFO T11_edit_ref_logo contract     seed=1 exec=True score=1.00 all=True tools=14 brej=2 runs=0 tok=51810/4170 678s 
+2026-10-31 01:30:49,177 INFO T12_t2i_size base         seed=1 exec=True score=1.00 all=True tools=0 brej=0 runs=0 tok=944/432 57s 
+2026-10-31 01:30:49,405 INFO T12_t2i_size extended     seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=0 tok=5159/762 112s 
+2026-10-31 01:30:49,652 INFO T12_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=1 tok=5159/762 113s 
+2026-10-31 01:30:49,893 INFO T12_t2i_size contract     seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=0 tok=5159/762 112s 
+2026-10-31 01:49:48,743 INFO T13_t2i_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/478 64s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 01:49:50,612 INFO T13_t2i_logo extended     seed=1 exec=True score=0.25 all=False tools=9 brej=0 runs=0 tok=24348/2426 368s 
+2026-10-31 01:49:52,733 INFO T13_t2i_logo output_retry seed=1 exec=True score=0.25 all=False tools=15 brej=2 runs=2 tok=56044/4181 671s 
+2026-10-31 01:49:53,552 INFO T13_t2i_logo contract     seed=1 exec=True score=0.25 all=False tools=15 brej=1 runs=0 tok=59455/4655 773s 
+2026-10-31 02:05:19,143 INFO T14_edit_ref base         seed=1 exec=True score=1.00 all=True tools=0 brej=0 runs=0 tok=972/543 70s 
+2026-10-31 02:05:19,520 INFO T14_edit_ref extended     seed=1 exec=True score=0.67 all=False tools=11 brej=0 runs=0 tok=29443/2056 323s 
+2026-10-31 02:05:19,854 INFO T14_edit_ref output_retry seed=1 exec=True score=0.67 all=False tools=15 brej=1 runs=1 tok=50865/3366 543s 
+2026-10-31 02:05:20,155 INFO T14_edit_ref contract     seed=1 exec=True score=0.67 all=False tools=15 brej=1 runs=0 tok=51761/3758 636s 
+2026-10-31 02:14:27,892 INFO T15_edit_ref_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=1017/444 58s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 02:14:27,903 WARNING T15_edit_ref_logo extended seed=1 skipped (infrastructure error, will retry): RemoteDisconnected: Remote end closed connection without response
+2026-10-31 02:14:27,903 WARNING T15_edit_ref_logo output_retry seed=1 skipped (infrastructure error, will retry): RemoteDisconnected: Remote end closed connection without response
+2026-10-31 02:14:27,903 WARNING T15_edit_ref_logo contract seed=1 skipped (infrastructure error, will retry): RemoteDisconnected: Remote end closed connection without response
+2026-10-31 02:14:42,929 INFO services reachable again after 15s
+2026-10-31 02:17:56,824 INFO T15_edit_ref_logo extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46093/1145 194s 
+2026-10-31 02:17:56,825 INFO T15_edit_ref_logo output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46093/1145 194s 
+2026-10-31 02:17:56,825 INFO T15_edit_ref_logo contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=46093/1145 194s 
+2026-10-31 02:23:14,931 INFO T16_t2i_size base         seed=1 exec=True score=0.50 all=False tools=0 brej=0 runs=0 tok=942/360 46s 
+2026-10-31 02:23:15,148 INFO T16_t2i_size extended     seed=1 exec=True score=0.50 all=False tools=5 brej=0 runs=0 tok=9517/981 124s 
+2026-10-31 02:23:15,393 INFO T16_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=7 brej=2 runs=3 tok=15690/1685 220s 
+2026-10-31 02:23:15,631 INFO T16_t2i_size contract     seed=1 exec=True score=1.00 all=True tools=6 brej=1 runs=0 tok=12521/1289 176s 
+2026-10-31 02:26:43,503 INFO T17_t2i_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=991/476 56s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 02:26:43,504 INFO T17_t2i_logo extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43550/992 152s 
+2026-10-31 02:26:43,506 INFO T17_t2i_logo output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43550/992 152s 
+2026-10-31 02:26:43,506 INFO T17_t2i_logo contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=43550/992 152s 
+2026-10-31 02:35:34,684 INFO T18_edit_ref base         seed=1 exec=True score=0.67 all=False tools=0 brej=0 runs=0 tok=965/523 65s 
+2026-10-31 02:35:35,392 INFO T18_edit_ref extended     seed=1 exec=True score=1.00 all=True tools=6 brej=0 runs=0 tok=12797/1442 196s 
+2026-10-31 02:35:36,076 INFO T18_edit_ref output_retry seed=1 exec=True score=1.00 all=True tools=6 brej=0 runs=1 tok=12797/1442 197s 
+2026-10-31 02:35:36,326 INFO T18_edit_ref contract     seed=1 exec=True score=1.00 all=True tools=10 brej=3 runs=0 tok=30026/3137 465s 
+2026-10-31 02:42:00,612 INFO T19_edit_ref_logo base         seed=1 exec=True score=0.40 all=False tools=0 brej=0 runs=0 tok=1018/556 66s 
+2026-10-31 02:42:00,618 INFO T19_edit_ref_logo extended     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19468/2187 317s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 02:42:00,623 INFO T19_edit_ref_logo output_retry seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19468/2187 317s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 02:42:00,627 INFO T19_edit_ref_logo contract     seed=1 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=19468/2187 317s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 02:50:34,185 INFO T20_t2i_size base         seed=1 exec=True score=0.50 all=False tools=0 brej=0 runs=0 tok=948/563 58s 
+2026-10-31 02:50:34,440 INFO T20_t2i_size extended     seed=1 exec=True score=0.50 all=False tools=3 brej=0 runs=0 tok=5254/817 104s 
+2026-10-31 02:50:34,681 INFO T20_t2i_size output_retry seed=1 exec=True score=1.00 all=True tools=7 brej=3 runs=3 tok=17459/1907 262s 
+2026-10-31 02:50:34,938 INFO T20_t2i_size contract     seed=1 exec=True score=0.50 all=False tools=7 brej=1 runs=0 tok=18099/2056 297s RuntimeError: HTTP 500 from /atelier/validate: b'500 Internal Server Error\n\nServer got itself in trouble'
+2026-10-31 03:05:42,141 INFO T21_t2i_logo base         seed=1 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=994/621 75s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-31 03:05:42,660 INFO T21_t2i_logo extended     seed=1 exec=True score=0.75 all=False tools=8 brej=0 runs=0 tok=18539/1573 223s 
+2026-10-31 03:05:43,167 INFO T21_t2i_logo output_retry seed=1 exec=True score=1.00 all=True tools=11 brej=2 runs=3 tok=31410/2795 405s 
+2026-10-31 03:05:43,679 INFO T21_t2i_logo contract     seed=1 exec=True score=1.00 all=True tools=15 brej=1 runs=0 tok=55756/4280 649s 
+2026-10-31 03:08:20,158 INFO T22_edit_ref base         seed=1 exec=True score=0.33 all=False tools=0 brej=0 runs=0 tok=963/386 45s 
+2026-10-31 03:08:20,416 INFO T22_edit_ref extended     seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=0 tok=5319/836 111s 
+2026-10-31 03:08:20,675 INFO T22_edit_ref output_retry seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=1 tok=5319/836 111s 
+2026-10-31 03:08:20,940 INFO T22_edit_ref contract     seed=1 exec=True score=1.00 all=True tools=3 brej=0 runs=0 tok=5319/836 111s 
+2026-10-31 03:18:49,395 INFO T23_edit_ref_logo base         seed=1 exec=True score=0.20 all=False tools=0 brej=0 runs=0 tok=1014/790 90s 
+2026-10-31 03:18:49,995 INFO T23_edit_ref_logo extended     seed=1 exec=True score=0.20 all=False tools=4 brej=0 runs=0 tok=7684/1185 150s 
+2026-10-31 03:18:50,320 INFO T23_edit_ref_logo output_retry seed=1 exec=True score=0.40 all=False tools=10 brej=3 runs=3 tok=32559/3217 451s 
+2026-10-31 03:18:50,657 INFO T23_edit_ref_logo contract     seed=1 exec=True score=1.00 all=True tools=5 brej=1 runs=0 tok=10954/1746 237s 

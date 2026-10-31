@@ -1,0 +1,2 @@
+contract vs extended: n_pairs=48 (briefs=24)  diff=+29.2 pp  95% CI cluster-bootstrap [+16.7, +41.7]  naive [+16.2, +42.2]  discordant: contract only=14, extended only=0  McNemar p=0.00012  -> HELPS
+output_retry vs extended: n_pairs=48 (briefs=24)  diff=+16.7 pp  95% CI cluster-bootstrap [+4.2, +29.2]  naive [+6.0, +27.3]  discordant: output_retry only=8, extended only=0  McNemar p=0.0078  -> HELPS
