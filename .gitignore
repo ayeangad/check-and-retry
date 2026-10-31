@@ -1,0 +1,22 @@
+# environments and third-party code
+.venv/
+vendor/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# generated ComfyUI state (outputs are reproduced by running the experiments)
+poc/comfy_base/output/
+poc/comfy_base/temp/
+poc/comfy_base/user/
+poc/comfy_base/models/
+poc/results/comfyui.log
+
+# copies of Hyde's page and its embedded data (regenerate with analysis/extract_exhibit_data.py)
+data/raw/
+data/derived/atelier_data.json
+
+# private working notes
+RESUME.md
+DECISIONS.md
+.impeccable/
