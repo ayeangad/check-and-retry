@@ -1,0 +1,24 @@
+2026-10-30 15:59:19,599 INFO T00_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=588/313 34s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 15:59:19,845 INFO T00_t2i_size extended     seed=0 exec=True score=1.00 all=True tools=10 brej=0 runs=0 tok=18269/1393 210s 
+2026-10-30 15:59:20,079 INFO T00_t2i_size output_retry seed=0 exec=True score=1.00 all=True tools=10 brej=0 runs=1 tok=18269/1393 210s 
+2026-10-30 15:59:20,320 INFO T00_t2i_size contract     seed=0 exec=True score=1.00 all=True tools=10 brej=0 runs=0 tok=18269/1393 210s 
+2026-10-30 16:04:22,491 INFO T01_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=638/454 65s rejected: missing_node_type: Node 'LatentImageUpscale' not found. The custom node may not be installed.
+2026-10-30 16:04:23,617 INFO T01_t2i_logo extended     seed=0 exec=True score=0.25 all=False tools=10 brej=0 runs=0 tok=6589/586 99s 
+2026-10-30 16:04:24,528 INFO T01_t2i_logo output_retry seed=0 exec=True score=0.25 all=False tools=15 brej=1 runs=1 tok=11886/811 141s 
+2026-10-30 16:04:25,662 INFO T01_t2i_logo contract     seed=0 exec=True score=0.50 all=False tools=15 brej=2 runs=0 tok=15229/1053 195s 
+2026-10-30 16:07:11,645 INFO T02_edit_ref base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=616/416 62s rejected: missing_node_type: Node 'LoadImageToLatentImage' not found. The custom node may not be installed.
+2026-10-30 16:07:11,646 INFO T02_edit_ref extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=29226/492 104s 
+2026-10-30 16:07:11,647 INFO T02_edit_ref output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=29226/492 104s 
+2026-10-30 16:07:11,648 INFO T02_edit_ref contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=29226/492 104s 
+2026-10-30 16:10:09,697 INFO T03_edit_ref_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=661/486 81s rejected: missing_node_type: Node 'Preprocess' not found. The custom node may not be installed.
+2026-10-30 16:10:09,698 INFO T03_edit_ref_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=26557/456 98s 
+2026-10-30 16:10:09,700 INFO T03_edit_ref_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=26557/456 98s 
+2026-10-30 16:10:09,701 INFO T03_edit_ref_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=26557/456 98s 
+2026-10-30 16:19:42,038 INFO T04_t2i_size base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=586/301 51s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:19:42,045 INFO T04_t2i_size extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39796/2766 521s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:19:42,052 INFO T04_t2i_size output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39796/2766 521s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:19:42,059 INFO T04_t2i_size contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=39796/2766 521s rejected: prompt_outputs_failed_validation: Prompt outputs failed validation
+2026-10-30 16:23:15,619 INFO T05_t2i_logo base         seed=0 exec=False score=0.00 all=False tools=0 brej=0 runs=0 tok=635/393 70s rejected: prompt_no_outputs: Prompt has no outputs
+2026-10-30 16:23:15,620 INFO T05_t2i_logo extended     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32648/513 144s 
+2026-10-30 16:23:15,622 INFO T05_t2i_logo output_retry seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32648/513 144s 
+2026-10-30 16:23:15,623 INFO T05_t2i_logo contract     seed=0 exec=False score=0.00 all=False tools=15 brej=0 runs=0 tok=32648/513 144s 
